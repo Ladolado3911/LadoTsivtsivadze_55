@@ -56,8 +56,7 @@
 		24FF2C0726A1D751001CF52E /* LadoTsivtsivadze_55 */ = {
 			isa = PBXGroup;
 			children = (
-				24FF2C0826A1D751001CF52E /* AppDelegate.swift */,
-				24FF2C0A26A1D751001CF52E /* SceneDelegate.swift */,
+				24FF2C1C26A1D7F1001CF52E /* App */,
 				24FF2C0C26A1D751001CF52E /* ViewController.swift */,
 				24FF2C0E26A1D751001CF52E /* Main.storyboard */,
 				24FF2C1126A1D752001CF52E /* Assets.xcassets */,
@@ -65,6 +64,15 @@
 				24FF2C1626A1D753001CF52E /* Info.plist */,
 			);
 			path = LadoTsivtsivadze_55;
+			sourceTree = "<group>";
+		};
+		24FF2C1C26A1D7F1001CF52E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2C0826A1D751001CF52E /* AppDelegate.swift */,
+				24FF2C0A26A1D751001CF52E /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
