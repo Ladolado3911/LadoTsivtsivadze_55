@@ -18,8 +18,8 @@ final class Page4Coordinator: CoordinatorProtocol {
         
         let vc = Page4Controller.instantiateFromStoryboard()
         vc.coordinator = self
-        vc.tabBarItem.image = UIImage(named: "homeIcon")
-        vc.title = "Home"
+        vc.tabBarItem.image = UIImage(systemName: "4.circle")
+        vc.title = "Page 4"
         
         self.navigationController?.viewControllers = [vc]
         
