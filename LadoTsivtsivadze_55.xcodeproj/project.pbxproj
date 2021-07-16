@@ -24,6 +24,12 @@
 		24FF2C4126A1DAF8001CF52E /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2C3D26A1DAF8001CF52E /* Storyboarded.swift */; };
 		24FF2C4226A1DAF8001CF52E /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2C3E26A1DAF8001CF52E /* CoordinatorProtocol.swift */; };
 		24FF2C4326A1DAF8001CF52E /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2C3F26A1DAF8001CF52E /* CoordinatorDelegate.swift */; };
+		24FF2C4826A1DBF2001CF52E /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2C4626A1DBF2001CF52E /* MainTabbarController.swift */; };
+		24FF2C4926A1DBF2001CF52E /* MainTabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF2C4726A1DBF2001CF52E /* MainTabbarController.storyboard */; };
+		24FF2C4C26A1DC7E001CF52E /* Page1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2C4B26A1DC7E001CF52E /* Page1Coordinator.swift */; };
+		24FF2C5026A1DCC7001CF52E /* Page2Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2C4F26A1DCC7001CF52E /* Page2Coordinator.swift */; };
+		24FF2C5426A1DCEC001CF52E /* Page3Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2C5326A1DCEC001CF52E /* Page3Coordinator.swift */; };
+		24FF2C5826A1DD11001CF52E /* Page4Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2C5726A1DD11001CF52E /* Page4Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,12 @@
 		24FF2C3D26A1DAF8001CF52E /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		24FF2C3E26A1DAF8001CF52E /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		24FF2C3F26A1DAF8001CF52E /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
+		24FF2C4626A1DBF2001CF52E /* MainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		24FF2C4726A1DBF2001CF52E /* MainTabbarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTabbarController.storyboard; sourceTree = "<group>"; };
+		24FF2C4B26A1DC7E001CF52E /* Page1Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1Coordinator.swift; sourceTree = "<group>"; };
+		24FF2C4F26A1DCC7001CF52E /* Page2Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2Coordinator.swift; sourceTree = "<group>"; };
+		24FF2C5326A1DCEC001CF52E /* Page3Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page3Coordinator.swift; sourceTree = "<group>"; };
+		24FF2C5726A1DD11001CF52E /* Page4Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page4Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +90,11 @@
 		24FF2C0726A1D751001CF52E /* LadoTsivtsivadze_55 */ = {
 			isa = PBXGroup;
 			children = (
-				24FF2C3926A1DAD0001CF52E /* Infrastructure */,
 				24FF2C1C26A1D7F1001CF52E /* App */,
 				24FF2C3526A1DA4F001CF52E /* Resources */,
-				24FF2C3426A1DA46001CF52E /* Supporting Files */,
 				24FF2C2126A1D8D9001CF52E /* Presentation */,
+				24FF2C3926A1DAD0001CF52E /* Infrastructure */,
+				24FF2C3426A1DA46001CF52E /* Supporting Files */,
 			);
 			path = LadoTsivtsivadze_55;
 			sourceTree = "<group>";
@@ -108,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				24FF2C3626A1DAAA001CF52E /* Base */,
+				24FF2C4426A1DBF2001CF52E /* Main */,
 				24FF2C2726A1D912001CF52E /* Page4Scene */,
 				24FF2C2626A1D90B001CF52E /* Page3Scene */,
 				24FF2C2526A1D904001CF52E /* Page2Scene */,
@@ -119,6 +132,7 @@
 		24FF2C2326A1D8E9001CF52E /* Page1Scene */ = {
 			isa = PBXGroup;
 			children = (
+				24FF2C4A26A1DC7E001CF52E /* Coordinator */,
 				24FF2C2426A1D8FC001CF52E /* View */,
 			);
 			path = Page1Scene;
@@ -136,8 +150,8 @@
 		24FF2C2526A1D904001CF52E /* Page2Scene */ = {
 			isa = PBXGroup;
 			children = (
-				24FF2C2826A1D93B001CF52E /* Page2Controller.swift */,
-				24FF2C2A26A1D945001CF52E /* Page2Controller.storyboard */,
+				24FF2C4E26A1DCC7001CF52E /* Coordinator */,
+				24FF2C4D26A1DCBB001CF52E /* View */,
 			);
 			path = Page2Scene;
 			sourceTree = "<group>";
@@ -145,8 +159,8 @@
 		24FF2C2626A1D90B001CF52E /* Page3Scene */ = {
 			isa = PBXGroup;
 			children = (
-				24FF2C2C26A1D966001CF52E /* Page3Controller.swift */,
-				24FF2C2E26A1D973001CF52E /* Page3Controller.storyboard */,
+				24FF2C5226A1DCEC001CF52E /* Coordinator */,
+				24FF2C5126A1DCE1001CF52E /* View */,
 			);
 			path = Page3Scene;
 			sourceTree = "<group>";
@@ -154,8 +168,8 @@
 		24FF2C2726A1D912001CF52E /* Page4Scene */ = {
 			isa = PBXGroup;
 			children = (
-				24FF2C3026A1D995001CF52E /* Page4Controller.swift */,
-				24FF2C3226A1D9A0001CF52E /* Page4Controller.storyboard */,
+				24FF2C5626A1DD11001CF52E /* Coordinator */,
+				24FF2C5526A1DD06001CF52E /* View */,
 			);
 			path = Page4Scene;
 			sourceTree = "<group>";
@@ -200,6 +214,82 @@
 				24FF2C3D26A1DAF8001CF52E /* Storyboarded.swift */,
 				24FF2C3E26A1DAF8001CF52E /* CoordinatorProtocol.swift */,
 				24FF2C3F26A1DAF8001CF52E /* CoordinatorDelegate.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		24FF2C4426A1DBF2001CF52E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2C4526A1DBF2001CF52E /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		24FF2C4526A1DBF2001CF52E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2C4626A1DBF2001CF52E /* MainTabbarController.swift */,
+				24FF2C4726A1DBF2001CF52E /* MainTabbarController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24FF2C4A26A1DC7E001CF52E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2C4B26A1DC7E001CF52E /* Page1Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		24FF2C4D26A1DCBB001CF52E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2C2826A1D93B001CF52E /* Page2Controller.swift */,
+				24FF2C2A26A1D945001CF52E /* Page2Controller.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24FF2C4E26A1DCC7001CF52E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2C4F26A1DCC7001CF52E /* Page2Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		24FF2C5126A1DCE1001CF52E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2C2C26A1D966001CF52E /* Page3Controller.swift */,
+				24FF2C2E26A1D973001CF52E /* Page3Controller.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24FF2C5226A1DCEC001CF52E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2C5326A1DCEC001CF52E /* Page3Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		24FF2C5526A1DD06001CF52E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2C3026A1D995001CF52E /* Page4Controller.swift */,
+				24FF2C3226A1D9A0001CF52E /* Page4Controller.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24FF2C5626A1DD11001CF52E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2C5726A1DD11001CF52E /* Page4Coordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -263,6 +353,7 @@
 			files = (
 				24FF2C2B26A1D945001CF52E /* Page2Controller.storyboard in Resources */,
 				24FF2C2F26A1D973001CF52E /* Page3Controller.storyboard in Resources */,
+				24FF2C4926A1DBF2001CF52E /* MainTabbarController.storyboard in Resources */,
 				24FF2C1526A1D753001CF52E /* LaunchScreen.storyboard in Resources */,
 				24FF2C1E26A1D8B0001CF52E /* Page1Controller.storyboard in Resources */,
 				24FF2C3326A1D9A0001CF52E /* Page4Controller.storyboard in Resources */,
@@ -279,13 +370,18 @@
 			files = (
 				24FF2C4326A1DAF8001CF52E /* CoordinatorDelegate.swift in Sources */,
 				24FF2C0926A1D751001CF52E /* AppDelegate.swift in Sources */,
+				24FF2C5426A1DCEC001CF52E /* Page3Coordinator.swift in Sources */,
+				24FF2C4826A1DBF2001CF52E /* MainTabbarController.swift in Sources */,
 				24FF2C2026A1D8C7001CF52E /* Page1Controller.swift in Sources */,
 				24FF2C4226A1DAF8001CF52E /* CoordinatorProtocol.swift in Sources */,
+				24FF2C5026A1DCC7001CF52E /* Page2Coordinator.swift in Sources */,
 				24FF2C0B26A1D751001CF52E /* SceneDelegate.swift in Sources */,
 				24FF2C2D26A1D966001CF52E /* Page3Controller.swift in Sources */,
 				24FF2C4026A1DAF8001CF52E /* AppCoordinator.swift in Sources */,
+				24FF2C4C26A1DC7E001CF52E /* Page1Coordinator.swift in Sources */,
 				24FF2C4126A1DAF8001CF52E /* Storyboarded.swift in Sources */,
 				24FF2C2926A1D93B001CF52E /* Page2Controller.swift in Sources */,
+				24FF2C5826A1DD11001CF52E /* Page4Coordinator.swift in Sources */,
 				24FF2C3826A1DABF001CF52E /* Base.swift in Sources */,
 				24FF2C3126A1D995001CF52E /* Page4Controller.swift in Sources */,
 			);
