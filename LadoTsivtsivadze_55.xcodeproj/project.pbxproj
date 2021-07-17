@@ -14,6 +14,8 @@
 		247247B626A2ACFA0050AE89 /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247247B526A2ACFA0050AE89 /* BookManager.swift */; };
 		247247B926A2AD4E0050AE89 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247247B826A2AD4E0050AE89 /* Endpoints.swift */; };
 		247247BB26A2AD580050AE89 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247247BA26A2AD580050AE89 /* Models.swift */; };
+		247247BF26A2D1FF0050AE89 /* Page1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247247BD26A2D1FF0050AE89 /* Page1Cell.swift */; };
+		247247C026A2D1FF0050AE89 /* Page1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247247BE26A2D1FF0050AE89 /* Page1Cell.xib */; };
 		24FF2C0926A1D751001CF52E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2C0826A1D751001CF52E /* AppDelegate.swift */; };
 		24FF2C0B26A1D751001CF52E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2C0A26A1D751001CF52E /* SceneDelegate.swift */; };
 		24FF2C1226A1D752001CF52E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FF2C1126A1D752001CF52E /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		247247B526A2ACFA0050AE89 /* BookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
 		247247B826A2AD4E0050AE89 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		247247BA26A2AD580050AE89 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		247247BD26A2D1FF0050AE89 /* Page1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1Cell.swift; sourceTree = "<group>"; };
+		247247BE26A2D1FF0050AE89 /* Page1Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page1Cell.xib; sourceTree = "<group>"; };
 		24FF2C0526A1D751001CF52E /* LadoTsivtsivadze_55.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadoTsivtsivadze_55.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FF2C0826A1D751001CF52E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24FF2C0A26A1D751001CF52E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,15 @@
 				247247BA26A2AD580050AE89 /* Models.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		247247BC26A2D1DC0050AE89 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				247247BD26A2D1FF0050AE89 /* Page1Cell.swift */,
+				247247BE26A2D1FF0050AE89 /* Page1Cell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		24FF2BFC26A1D751001CF52E = {
@@ -193,6 +206,7 @@
 		24FF2C2426A1D8FC001CF52E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				247247BC26A2D1DC0050AE89 /* Cells */,
 				24FF2C1D26A1D8B0001CF52E /* Page1Controller.storyboard */,
 				24FF2C1F26A1D8C7001CF52E /* Page1Controller.swift */,
 			);
@@ -419,6 +433,7 @@
 				24FF2C2F26A1D973001CF52E /* Page3Controller.storyboard in Resources */,
 				24FF2C4926A1DBF2001CF52E /* MainTabbarController.storyboard in Resources */,
 				24FF2C1526A1D753001CF52E /* LaunchScreen.storyboard in Resources */,
+				247247C026A2D1FF0050AE89 /* Page1Cell.xib in Resources */,
 				24FF2C1E26A1D8B0001CF52E /* Page1Controller.storyboard in Resources */,
 				24FF2C3326A1D9A0001CF52E /* Page4Controller.storyboard in Resources */,
 				24FF2C1226A1D752001CF52E /* Assets.xcassets in Resources */,
@@ -437,6 +452,7 @@
 				247247B626A2ACFA0050AE89 /* BookManager.swift in Sources */,
 				247247BB26A2AD580050AE89 /* Models.swift in Sources */,
 				247247AF26A2AC420050AE89 /* CollectionDataSource.swift in Sources */,
+				247247BF26A2D1FF0050AE89 /* Page1Cell.swift in Sources */,
 				24FF2C5426A1DCEC001CF52E /* Page3Coordinator.swift in Sources */,
 				24FF2C4826A1DBF2001CF52E /* MainTabbarController.swift in Sources */,
 				24FF2C2026A1D8C7001CF52E /* Page1Controller.swift in Sources */,

@@ -61,10 +61,12 @@ class GenericTableDataSource<T, E, F>: NSObject, TableViewDataSource {
     var count: Int?
     
     var counter: Int {
-        if let data = self.data as? Array<Element> {
+        if let data = self.data as? Array<Element.Type> {
+            print("here")
             return data.count
         }
         else {
+            print("here2")
             return count ?? 0
         }
     }
@@ -102,6 +104,7 @@ class GenericTableDataSource<T, E, F>: NSObject, TableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(counter)
         return counter
     }
     
@@ -110,12 +113,7 @@ class GenericTableDataSource<T, E, F>: NSObject, TableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 1 {
-            return tableview.bounds.width
-        }
-        else {
-            return 164
-        }
+        return 50
     }
 }
 

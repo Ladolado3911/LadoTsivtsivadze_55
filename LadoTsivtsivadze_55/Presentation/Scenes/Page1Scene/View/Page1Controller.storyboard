@@ -16,14 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gAF-gz-ngy">
-                                <rect key="frame" x="87" y="291" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2P0-nS-Jfa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2P0-nS-Jfa" secondAttribute="trailing" id="Gie-eX-YDo"/>
+                            <constraint firstItem="2P0-nS-Jfa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IZP-hu-sTw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2P0-nS-Jfa" secondAttribute="bottom" id="lWi-uW-KMA"/>
+                            <constraint firstItem="2P0-nS-Jfa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xvb-r3-BGS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblView" destination="2P0-nS-Jfa" id="Iop-cp-nd7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,7 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

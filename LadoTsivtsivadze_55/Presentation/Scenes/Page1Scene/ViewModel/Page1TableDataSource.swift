@@ -7,6 +7,16 @@
 
 import UIKit
 //
-//class Page1TableDataSource: GenericTableDataSource<> {
-//    
-//}
+class Page1TableDataSource: GenericTableDataSource<[BookModel], Page1Controller, BookModel.Type> {
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = cellsArr.first
+        let realCell = tableView.dequeueReusableCell(withIdentifier: (cell?.identifier)!) as? Page1Cell
+        return realCell!
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let width = tableView.bounds.width
+        return width / 1.6
+    }
+}

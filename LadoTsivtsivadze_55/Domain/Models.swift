@@ -22,6 +22,7 @@ struct Author: Codable {
 struct BookModel {
     
     private var book: Book!
+    var authorImage: URL?
     
     var title: String {
         return book.title ?? ""
@@ -36,8 +37,9 @@ struct BookModel {
         return book.author ?? ""
     }
     
-    init(with book: Book) {
+    init(with book: Book, with2 authorImage: URL? = nil) {
         self.book = book
+        self.authorImage = authorImage
     }
 }
 
