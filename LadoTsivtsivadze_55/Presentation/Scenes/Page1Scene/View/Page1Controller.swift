@@ -31,10 +31,11 @@ class Page1Controller: BaseViewController {
     
     func configDataSource(with data: [BookModel]) {
         let cell = Cell(nibName: "Page1Cell", identifier: "Page1Cell")
+        let newData = Array(data.prefix(4))
         dataSource = Page1TableDataSource(tableView: tblView,
                                           cellsArray: [cell],
                                           rootController: self,
-                                          dataArray: data,
+                                          dataArray: newData,
                                           dataElement: BookModel.self)
     }
 }

@@ -18,19 +18,24 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HN0-dK-oQ6">
-                        <rect key="frame" x="5" y="5" width="426" height="199"/>
+                        <rect key="frame" x="10" y="10" width="416" height="189"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="21"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="HN0-dK-oQ6" secondAttribute="trailing" constant="5" id="It9-5M-5VR"/>
-                    <constraint firstItem="HN0-dK-oQ6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="nev-eI-mgU"/>
-                    <constraint firstItem="HN0-dK-oQ6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="qyF-iN-dEE"/>
-                    <constraint firstAttribute="bottom" secondItem="HN0-dK-oQ6" secondAttribute="bottom" constant="5" id="yUc-56-lQx"/>
+                    <constraint firstAttribute="trailing" secondItem="HN0-dK-oQ6" secondAttribute="trailing" constant="10" id="It9-5M-5VR"/>
+                    <constraint firstItem="HN0-dK-oQ6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="nev-eI-mgU"/>
+                    <constraint firstItem="HN0-dK-oQ6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qyF-iN-dEE"/>
+                    <constraint firstAttribute="bottom" secondItem="HN0-dK-oQ6" secondAttribute="bottom" constant="10" id="yUc-56-lQx"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="189.85507246376812" y="130.91517857142856"/>
+            <point key="canvasLocation" x="189.85507246376812" y="130.24553571428572"/>
         </tableViewCell>
     </objects>
     <resources>

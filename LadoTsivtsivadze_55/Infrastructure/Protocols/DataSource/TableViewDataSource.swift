@@ -61,7 +61,7 @@ class GenericTableDataSource<T, E, F>: NSObject, TableViewDataSource {
     var count: Int?
     
     var counter: Int {
-        if let data = self.data as? Array<Element.Type> {
+        if let data = self.data as? Array<Any> {
             print("here")
             return data.count
         }
