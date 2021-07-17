@@ -9,5 +9,5 @@ import UIKit
 
 struct Endpoints {
     static var booksEndpoint: String = "https://private-526b6d-bookstore.apiary-mock.com/data/books"
-    static var authorsEndpoint: String = "http://private-526b6d-bookstore.apiary-mock.com/data/authors"
+    static var authorsEndpoint: String = "https://private-526b6d-bookstore.apiary-mock.com/data/authors"
 }

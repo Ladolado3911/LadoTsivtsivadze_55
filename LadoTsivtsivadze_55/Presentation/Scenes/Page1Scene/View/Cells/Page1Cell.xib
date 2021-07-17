@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +18,31 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HN0-dK-oQ6">
                         <rect key="frame" x="10" y="10" width="416" height="189"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mel-Uk-HXk">
+                                <rect key="frame" x="0.0" y="0.0" width="416" height="189"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vl-XL-7QY">
+                                <rect key="frame" x="20" y="119" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mel-Uk-HXk" secondAttribute="bottom" id="6bt-0V-VHx"/>
+                            <constraint firstItem="mel-Uk-HXk" firstAttribute="bottom" secondItem="7vl-XL-7QY" secondAttribute="bottom" constant="40" id="8KY-bI-q1a"/>
+                            <constraint firstItem="mel-Uk-HXk" firstAttribute="leading" secondItem="HN0-dK-oQ6" secondAttribute="leading" id="EW1-ml-BX2"/>
+                            <constraint firstItem="mel-Uk-HXk" firstAttribute="height" secondItem="HN0-dK-oQ6" secondAttribute="height" id="NfH-1b-Vlj"/>
+                            <constraint firstAttribute="trailing" secondItem="mel-Uk-HXk" secondAttribute="trailing" id="VeF-o2-640"/>
+                            <constraint firstItem="7vl-XL-7QY" firstAttribute="leading" secondItem="mel-Uk-HXk" secondAttribute="leading" constant="20" id="bIA-dq-Q3X"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <integer key="value" value="21"/>
@@ -35,12 +58,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="mel-Uk-HXk" id="K0V-Pv-kAn"/>
+                <outlet property="subView" destination="HN0-dK-oQ6" id="2xH-Nd-hbC"/>
+                <outlet property="titleLabel" destination="7vl-XL-7QY" id="2CZ-Qu-naf"/>
+            </connections>
             <point key="canvasLocation" x="189.85507246376812" y="130.24553571428572"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

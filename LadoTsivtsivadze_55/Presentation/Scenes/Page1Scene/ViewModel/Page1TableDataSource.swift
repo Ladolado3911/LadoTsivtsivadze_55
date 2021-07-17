@@ -12,6 +12,8 @@ class Page1TableDataSource: GenericTableDataSource<[BookModel], Page1Controller,
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = cellsArr.first
         let realCell = tableView.dequeueReusableCell(withIdentifier: (cell?.identifier)!) as? Page1Cell
+        guard let data = data else { return realCell! }
+        realCell!.bookModel = data[indexPath.row]
         return realCell!
     }
     
