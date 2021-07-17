@@ -7,11 +7,6 @@
 
 import Foundation
 
-struct Endpoints {
-    static var booksEndpoint: String = "https://private-526b6d-bookstore.apiary-mock.com/data/books"
-    static var authorByNameEndpoint: String = ""
-}
-
 protocol NetworkManagerProtocol: AnyObject {
     func get<T: Codable>(with url: String, completion: @escaping ((Result<T, Error>) -> Void))
 }
